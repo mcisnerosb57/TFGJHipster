@@ -1,0 +1,30 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "aplicacion",
+            "otherEntityName": "aplicacion",
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": [
+                "required"
+            ],
+            "otherEntityField": "nombre"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "versionapp",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "pattern"
+            ],
+            "fieldValidateRulesPattern": "^[a-zA-Z0-9]*$"
+        }
+    ],
+    "changelogDate": "20170415171041",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "version",
+    "pagination": "pagination"
+}
